@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #C4A484;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.mainmenuController">
+   <children>
+      <Text layoutX="45.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PrimeHealth Network">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="12.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Navigating health insurance made simple">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="51.0" layoutY="510.0" />
+      <Label layoutX="59.0" layoutY="511.0" prefHeight="52.0" prefWidth="223.0" text="Sign up, see what you qualify for, and &#10;find a plan option that works for you!" wrapText="true">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Pane layoutX="46.0" layoutY="148.0" prefHeight="149.0" prefWidth="242.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <Button layoutX="29.0" layoutY="77.0" mnemonicParsing="false" onAction="#AboutUsBtn" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: BD9B16;" text="ABOUT US">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+            <Label layoutX="13.0" layoutY="28.0" text="             SEE EVERY OPTION&#10;DISCOVER YOUR IDEAL COVERAGE.">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="48.0" layoutY="375.0" mnemonicParsing="false" onAction="#onLoginButtonClick" style="-fx-background-color: BD9B16;" text="Log In">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button layoutX="228.0" layoutY="375.0" mnemonicParsing="false" onAction="#onSignUpBtn" style="-fx-background-color: BD9B16;" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

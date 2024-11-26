@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #C4A484;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.AboutUsController">
+   <children>
+      <Text layoutX="45.0" layoutY="63.0" onMouseClicked="#onTitleClick" strokeType="OUTSIDE" strokeWidth="0.0" text="PrimeHealth Network">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="51.0" layoutY="510.0" />
+      <Label layoutX="59.0" layoutY="523.0" prefHeight="52.0" prefWidth="223.0" text="Sign up, see what you qualify for, and &#10;find a plan option that works for you!" wrapText="true">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Text layoutX="118.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About us">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="61.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At PrimeHealth Network, we believe&#10;health insurance should be simple, &#10;accessible, and tailored to you. Our&#10;mission is to empower individuals &#10;and families with the tools they need&#10;to make informed decisions about&#10;their health coverage.&#10;&#10;We bring transparency to the&#10;complex world of insurance, offering&#10;a seamless platform to compare &#10;plans, track claims, and manage &#10;policies all in one place. With a focus &#10;on innovation and personalized support,&#10;PrimeHealth Network is here to help you&#10;navigate your health journey with &#10;confidence and ease.&#10;&#10;Whether you're exploring your options&#10;or managing ongoing coverage, we’re &#10;committed to being your trusted partner &#10;every step of the way.&#10;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.SignupPageController">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="959.0" prefWidth="331.0" style="-fx-background-color: #4C4347;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="295.0" prefWidth="320.0">
+               <children>
+                  <Text onMouseClicked="#onTitleClick" strokeType="OUTSIDE" strokeWidth="0.0" text="PrimeHealth Network">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.7529411911964417" green="0.5921568870544434" blue="0.16078431904315948" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4900556555901128">
+                                 <color>
+                                    <Color red="0.9137254953384399" green="0.7529411911964417" blue="0.30588236451148987" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9803921580314636" green="0.9058823585510254" blue="0.6980392336845398" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <effect>
+                        <InnerShadow height="3.0" radius="1.0" width="3.0" />
+                     </effect>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Text>
+                  <HBox alignment="TOP_CENTER" prefHeight="28.0" prefWidth="264.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Already a member?">
+                           <font>
+                              <Font name="Times New Roman Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Button mnemonicParsing="false" onAction="#onLoginButtonClick" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="Login">
+                           <font>
+                              <Font name="Times New Roman" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="12.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Text fill="#c1a249" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's get you started">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fill="#c1a249" strokeType="OUTSIDE" strokeWidth="0.0" text="Just a few steps to get things going for you!">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1) Account Information - &#10;2) Personal Information  &amp; &#10;    Other Information">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox layoutX="65.0" layoutY="299.0" prefHeight="589.0" prefWidth="197.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="firstnameid" prefHeight="25.0" prefWidth="195.0" promptText="Enter your First Name">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="lastnameid" prefHeight="25.0" prefWidth="196.0" promptText="Enter your Last Name">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth(MM/DD/YYYY)">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="dobid" prefHeight="25.0" prefWidth="197.0" promptText="(MM/DD/YYYY)">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Middle Name (Optional)">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="middlenameid" prefHeight="25.0" prefWidth="195.0" promptText="Enter your Email Address">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="emailid" prefHeight="26.0" prefWidth="192.0" promptText="Enter your Middle Name">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="genderid" prefHeight="25.0" prefWidth="196.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Phone Number">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="phonenumberid" prefHeight="25.0" prefWidth="197.0" promptText="XXX-XXX-XXXX">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextField fx:id="passwordid" prefHeight="25.0" prefWidth="196.0" promptText="Enter your Password">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#onNextPageBtn" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="Next Step">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </content>
+</ScrollPane>
