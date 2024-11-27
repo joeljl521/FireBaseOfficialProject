@@ -27,7 +27,7 @@
             <Button layoutX="92.0" layoutY="574.0" mnemonicParsing="false" text="Setting" />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="92.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../CSC325_Firebase_webview_Auth_StarterCode8/src/main/resources/files/astrobot.jpg" />
+                  <Image url="@../files/astrobot.jpg" />
                </image>
             </ImageView>
             <Button layoutX="181.0" layoutY="574.0" mnemonicParsing="false" onAction="#LogOutBtn" text="Log Out" />
