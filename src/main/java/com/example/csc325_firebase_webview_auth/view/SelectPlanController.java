@@ -7,6 +7,16 @@ import java.io.IOException;
 public class SelectPlanController {
 
     @FXML
+    protected void SelectPlan1() {
+
+    }
+
+    @FXML
+    protected void SelectPlan2() {
+
+    }
+
+    @FXML
     protected void onTitleClick(){
         try {
             App.setRoot("mainmenu.fxml");

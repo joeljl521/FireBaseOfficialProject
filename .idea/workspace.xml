@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="GUI update">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/files/Screenshot 2024-11-28 181538.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/aboutus.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/aboutus.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/dismiss.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dismiss.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/loginpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/SelectPlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/SelectPlanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/selectplan.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/selectplan.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signuppage2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signuppage2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/useraccountinfo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/useraccountinfo.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/csc325_firebase_webview_auth/view/App.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +174,7 @@
       <workItem from="1732664402516" duration="4167000" />
       <workItem from="1732813218537" duration="897000" />
       <workItem from="1732833973198" duration="1189000" />
-      <workItem from="1732911745718" duration="1082000" />
+      <workItem from="1732911745718" duration="2094000" />
     </task>
     <task id="LOCAL-00001" summary="reduce Java version to 17">
       <option name="closed" value="true" />
@@ -229,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732668979786</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="GUI update">
+      <option name="closed" value="true" />
+      <created>1732912944369</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732912944369</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

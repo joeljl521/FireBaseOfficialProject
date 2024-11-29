@@ -25,7 +25,7 @@ public class App extends Application {
     public void start(Stage primaryStage) throws Exception {
         fstore = contxtFirebase.firebase();
         fauth = FirebaseAuth.getInstance();
-        scene = new Scene(loadFXML("/fxml/useraccountinfo.fxml"));
+        scene = new Scene(loadFXML("/fxml/selectplan.fxml"));
         primaryStage.setScene(scene);
         primaryStage.show();
     }
