@@ -84,7 +84,7 @@
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Text>
-      <Button layoutX="45.0" layoutY="376.0" mnemonicParsing="false" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);;" text="Login" textAlignment="CENTER">
+      <Button layoutX="45.0" layoutY="376.0" mnemonicParsing="false" onAction="#LoginBtn" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);;" text="Login" textAlignment="CENTER">
          <padding>
             <Insets left="100.0" right="100.0" top="5.0" />
          </padding>

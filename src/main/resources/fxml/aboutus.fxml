@@ -1,32 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #C4A484;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.AboutUsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #332B2F;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.AboutUsController">
    <children>
-      <Text layoutX="45.0" layoutY="63.0" onMouseClicked="#onTitleClick" strokeType="OUTSIDE" strokeWidth="0.0" text="PrimeHealth Network">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font>
-      </Text>
-      <AnchorPane layoutX="51.0" layoutY="510.0" />
-      <Label layoutX="59.0" layoutY="523.0" prefHeight="52.0" prefWidth="223.0" text="Sign up, see what you qualify for, and &#10;find a plan option that works for you!" wrapText="true">
-         <font>
-            <Font name="System Italic" size="13.0" />
-         </font>
-      </Label>
-      <Text layoutX="118.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About us">
-         <font>
-            <Font name="System Bold Italic" size="24.0" />
-         </font>
-      </Text>
-      <Text layoutX="61.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At PrimeHealth Network, we believe&#10;health insurance should be simple, &#10;accessible, and tailored to you. Our&#10;mission is to empower individuals &#10;and families with the tools they need&#10;to make informed decisions about&#10;their health coverage.&#10;&#10;We bring transparency to the&#10;complex world of insurance, offering&#10;a seamless platform to compare &#10;plans, track claims, and manage &#10;policies all in one place. With a focus &#10;on innovation and personalized support,&#10;PrimeHealth Network is here to help you&#10;navigate your health journey with &#10;confidence and ease.&#10;&#10;Whether you're exploring your options&#10;or managing ongoing coverage, we’re &#10;committed to being your trusted partner &#10;every step of the way.&#10;">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Text>
+      <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="335.0">
+         <children>
+            <Text onMouseClicked="#onTitleClick" strokeType="OUTSIDE" strokeWidth="0.0" text="PrimeHealth Network">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7529411911964417" green="0.5921568870544434" blue="0.16078431904315948" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5">
+                           <color>
+                              <Color red="0.9137254953384399" green="0.7529411911964417" blue="0.30588236451148987" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9803921580314636" green="0.9058823585510254" blue="0.6980392336845398" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <InnerShadow height="3.0" radius="1.0" width="3.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="#b88c32" strokeType="OUTSIDE" strokeWidth="0.0" text="ABOUT US">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="#b88c32" strokeType="OUTSIDE" strokeWidth="0.0" text="At PrimeHealth Network, we believe&#10;health insurance should be simple, &#10;accessible, and tailored to you. Our&#10;mission is to empower individuals &#10;and families with the tools they need&#10;to make informed decisions about&#10;their health coverage.&#10;&#10;We bring transparency to the&#10;complex world of insurance, offering&#10;a seamless platform to compare &#10;plans, track claims, and manage &#10;policies all in one place. With a focus &#10;on innovation and personalized support,&#10;PrimeHealth Network is here to help you&#10;navigate your health journey with &#10;confidence and ease.&#10;&#10;Whether you're exploring your options&#10;or managing ongoing coverage, we’re &#10;committed to being your trusted partner &#10;every step of the way.&#10;" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
