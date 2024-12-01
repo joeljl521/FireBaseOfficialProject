@@ -25,10 +25,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class AccessFBView {
+public class SignUpController {
 
 
-     @FXML
+    @FXML
     private TextField nameField;
     @FXML
     private TextField majorField;
@@ -40,7 +40,7 @@ public class AccessFBView {
     private Button readButton;
     @FXML
     private TextArea outputField;
-     private boolean key;
+    private boolean key;
     private ObservableList<Person> listOfUsers = FXCollections.observableArrayList();
     private Person person;
     public ObservableList<Person> getListOfUsers() {
@@ -56,8 +56,67 @@ public class AccessFBView {
     }
 
     @FXML
+    private TextField dobid;
+
+    @FXML
+    private TextField emailid;
+
+    @FXML
+    private TextField firstnameid;
+
+    @FXML
+    private TextField genderid;
+
+    @FXML
+    private TextField lastnameid;
+
+    @FXML
+    private TextField middlenameid;
+
+    @FXML
+    private TextField passwordid;
+
+    @FXML
+    private TextField phonenumberid;
+
+
+    @FXML
+    protected void onNextPageBtn(){
+        try {
+            App.setRoot("signuppage2.fxml");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
+        String firstname = firstnameid.getText();
+        System.out.println(firstname);
+    }
+
+    @FXML
+    protected void onLoginButtonClick(){
+        try {
+            App.setRoot("loginpage.fxml");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @FXML
+    protected void onTitleClick(){
+        try {
+            App.setRoot("mainmenu.fxml");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @FXML
+    protected void ApplyBtn(){}
+
+    @FXML
     private void addRecord(ActionEvent event) {
-        addData();
+        nextStepAddData();
     }
 
         @FXML
@@ -75,16 +134,32 @@ public class AccessFBView {
         App.setRoot("/files/WebContainer.fxml");
     }
 
-    public void addData() {
+    public void nextStepAddData() {
 
-        DocumentReference docRef = App.fstore.collection("References").document(UUID.randomUUID().toString());
+//        DocumentReference docRef = App.fstore.collection("References").document(UUID.randomUUID().toString());
+//
+//        Map<String, Object> data = new HashMap<>();
+//        data.put("Name", nameField.getText());
+//        data.put("Major", majorField.getText());
+//        data.put("Age", Integer.parseInt(ageField.getText()));
+//        //asynchronously write data
+//        ApiFuture<WriteResult> result = docRef.set(data);
+
+        DocumentReference docRef = App.fstore.collection("Users").document(UUID.randomUUID().toString());
 
         Map<String, Object> data = new HashMap<>();
-        data.put("Name", nameField.getText());
-        data.put("Major", majorField.getText());
-        data.put("Age", Integer.parseInt(ageField.getText()));
+        data.put("First Name", firstnameid.getText());
+        data.put("Last Name", lastnameid.getText());
+        data.put("Date of Birth", dobid.getText());
         //asynchronously write data
         ApiFuture<WriteResult> result = docRef.set(data);
+
+        try {
+            App.setRoot("signuppage2.fxml");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
         public boolean readFirebase()

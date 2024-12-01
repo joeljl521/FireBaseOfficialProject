@@ -14,9 +14,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.SignupPageController">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2000.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.SignUpController">
    <content>
-      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="959.0" prefWidth="331.0" style="-fx-background-color: #4C4347;">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="331.0" style="-fx-background-color: #4C4347;">
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="295.0" prefWidth="320.0">
                <children>
@@ -98,7 +98,7 @@
                   </Text>
                </children>
             </VBox>
-            <VBox layoutX="65.0" layoutY="299.0" prefHeight="589.0" prefWidth="197.0">
+            <VBox layoutX="61.0" layoutY="269.0" prefHeight="841.0" prefWidth="198.0">
                <children>
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
                      <font>
@@ -204,16 +204,109 @@
                         <Insets bottom="20.0" />
                      </VBox.margin>
                   </TextField>
-                  <Button mnemonicParsing="false" onAction="#onNextPageBtn" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="Next Step">
-                     <font>
-                        <Font name="Times New Roman" size="13.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets top="20.0" />
-                     </VBox.margin>
-                  </Button>
+                  <VBox prefHeight="562.0" prefWidth="219.0">
+                     <children>
+                        <Text fill="#fbfbfb" strokeType="OUTSIDE" strokeWidth="0.0" text="Street Address">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField prefHeight="25.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Text fill="#fbfbfb" strokeType="OUTSIDE" strokeWidth="0.0" text="Apt, Suite, Floor, ETC">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField prefHeight="25.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="City">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField prefHeight="25.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="State">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField prefHeight="25.0" prefWidth="200.0" promptText="(Only Based In NY)">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Zip Code">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField prefHeight="26.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Income Range">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField prefHeight="25.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Household Size">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField prefHeight="25.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="70.0" />
+                     </children>
+                  </VBox>
                </children>
             </VBox>
+            <Button fx:id="ApplyBtn" layoutX="134.0" layoutY="1229.0" mnemonicParsing="false" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="Apply">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Button>
          </children></AnchorPane>
    </content>
 </ScrollPane>
