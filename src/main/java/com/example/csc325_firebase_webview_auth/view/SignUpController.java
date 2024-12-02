@@ -79,6 +79,34 @@ public class SignUpController {
     @FXML
     private TextField phonenumberid;
 
+    @FXML
+    private TextField streetaddressid;
+
+    @FXML
+    private TextField etcid;
+
+    @FXML
+    private TextField cityid;
+
+    @FXML
+    private TextField stateid;
+
+    @FXML
+    private TextField zipcodeid;
+
+    @FXML
+    private TextField incomerangeid;
+
+    @FXML
+    private TextField householdsizeid;
+
+
+
+
+
+
+
+
 
     @FXML
     protected void onNextPageBtn(){
@@ -111,12 +139,10 @@ public class SignUpController {
         }
     }
 
-    @FXML
-    protected void ApplyBtn(){}
+
 
     @FXML
-    private void addRecord(ActionEvent event) {
-        nextStepAddData();
+    private void addRecord(ActionEvent event) {ApplyBtn();
     }
 
         @FXML
@@ -134,7 +160,8 @@ public class SignUpController {
         App.setRoot("/files/WebContainer.fxml");
     }
 
-    public void nextStepAddData() {
+    @FXML
+    public void ApplyBtn() {
 
 //        DocumentReference docRef = App.fstore.collection("References").document(UUID.randomUUID().toString());
 //
@@ -151,6 +178,22 @@ public class SignUpController {
         data.put("First Name", firstnameid.getText());
         data.put("Last Name", lastnameid.getText());
         data.put("Date of Birth", dobid.getText());
+        data.put("Middle Name", middlenameid.getText());
+        data.put("Email Address", emailid.getText());
+        data.put("Gender", genderid.getText());
+        data.put("Mobile Phone Number", phonenumberid.getText());
+        data.put("Password", passwordid.getText());
+        data.put("Street Address", streetaddressid.getText());
+        data.put("Apt, Suite, Floor, ETC", etcid.getText());
+        data.put("City", cityid.getText());
+        data.put("State", stateid.getText());
+        data.put("Zip Code", zipcodeid.getText());
+        data.put("Income Range", incomerangeid.getText());
+        data.put("Household Size", householdsizeid.getText());
+        
+
+
+
         //asynchronously write data
         ApiFuture<WriteResult> result = docRef.set(data);
 

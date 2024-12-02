@@ -2,21 +2,75 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #C4A484;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.mainmenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #332B2F;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.mainmenuController">
    <children>
-      <Text layoutX="45.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PrimeHealth Network">
+      <Text layoutX="53.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PrimeHealth Network">
          <font>
-            <Font name="System Bold Italic" size="24.0" />
+            <Font name="Times New Roman Bold" size="24.0" />
          </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7529411911964417" green="0.5921568870544434" blue="0.16078431904315948" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5020325203252033">
+                     <color>
+                        <Color red="0.9137254953384399" green="0.7529411911964417" blue="0.30588236451148987" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9803921580314636" green="0.9058823585510254" blue="0.6980392336845398" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <InnerShadow height="3.0" radius="1.0" width="3.0" />
+         </effect>
       </Text>
-      <Text layoutX="12.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Navigating health insurance made simple">
+      <Text layoutX="30.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Navigating health insurance made simple">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+         <fill>
+            <LinearGradient endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9254902005195618" green="0.8039215803146362" blue="0.4745098054409027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.48780487804878053">
+                     <color>
+                        <Color red="0.8039215803146362" green="0.6431372761726379" blue="0.3019607961177826" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7215686440467834" green="0.5490196347236633" blue="0.19607843458652496" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="#b88c32" layoutX="24.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up, see what you qualify for, and find a plan option that works for you" textAlignment="CENTER" wrappingWidth="292.23898220062256">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
          </font>
       </Text>
       <AnchorPane layoutX="51.0" layoutY="510.0" />
@@ -25,26 +79,42 @@
             <Font name="System Italic" size="13.0" />
          </font>
       </Label>
-      <Pane layoutX="46.0" layoutY="148.0" prefHeight="149.0" prefWidth="242.0" style="-fx-background-color: #A9A9A9;">
+      <Pane layoutX="46.0" layoutY="148.0" prefHeight="149.0" prefWidth="242.0" style="-fx-background-color: #4C4347;">
          <children>
-            <Button layoutX="29.0" layoutY="77.0" mnemonicParsing="false" onAction="#AboutUsBtn" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: BD9B16;" text="ABOUT US">
+            <Button layoutX="29.0" layoutY="77.0" mnemonicParsing="false" onAction="#AboutUsBtn" prefHeight="48.0" prefWidth="184.0" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="ABOUT US">
                <font>
-                  <Font name="System Bold Italic" size="18.0" />
+                  <Font name="Times New Roman" size="18.0" />
                </font></Button>
             <Label layoutX="13.0" layoutY="28.0" text="             SEE EVERY OPTION&#10;DISCOVER YOUR IDEAL COVERAGE.">
                <font>
-                  <Font name="System Bold Italic" size="13.0" />
+                  <Font name="Times New Roman" size="13.0" />
                </font>
+               <textFill>
+                  <LinearGradient endX="1.0" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8823529481887817" green="0.7372549176216125" blue="0.4000000059604645" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9215686321258545" green="0.7921568751335144" blue="0.45490196347236633" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
             </Label>
          </children>
       </Pane>
-      <Button layoutX="48.0" layoutY="375.0" mnemonicParsing="false" onAction="#onLoginButtonClick" style="-fx-background-color: BD9B16;" text="Log In">
+      <Button layoutX="48.0" layoutY="375.0" mnemonicParsing="false" onAction="#onLoginButtonClick" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="Log In">
          <font>
-            <Font name="System Bold" size="13.0" />
+            <Font name="Times New Roman" size="13.0" />
          </font></Button>
-      <Button layoutX="228.0" layoutY="375.0" mnemonicParsing="false" onAction="#onSignUpBtn" style="-fx-background-color: BD9B16;" text="Sign Up">
+      <Button layoutX="228.0" layoutY="375.0" mnemonicParsing="false" onAction="#onSignUpBtn" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="Sign Up">
          <font>
-            <Font name="System Bold" size="13.0" />
+            <Font name="Times New Roman" size="13.0" />
          </font></Button>
    </children>
 </AnchorPane>
