@@ -210,7 +210,7 @@ public class SignUpController {
              key = false;
 
         //asynchronously retrieve all documents
-        ApiFuture<QuerySnapshot> future =  App.fstore.collection("References").get();
+        ApiFuture<QuerySnapshot> future =  App.fstore.collection("Users").get();
         // future.get() blocks on response
         List<QueryDocumentSnapshot> documents;
         try
