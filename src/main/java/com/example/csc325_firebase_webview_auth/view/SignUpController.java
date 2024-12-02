@@ -173,7 +173,7 @@ public class SignUpController {
 //        ApiFuture<WriteResult> result = docRef.set(data);
 
         DocumentReference docRef = App.fstore.collection("Users").document(UUID.randomUUID().toString());
-
+// Should set user here for kat??
         Map<String, Object> data = new HashMap<>();
         data.put("First Name", firstnameid.getText());
         data.put("Last Name", lastnameid.getText());
