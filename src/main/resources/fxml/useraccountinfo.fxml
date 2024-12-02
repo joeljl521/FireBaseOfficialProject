@@ -80,7 +80,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField promptText="Username">
+                        <TextField editable="false" promptText="Username">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
@@ -93,7 +93,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField promptText="Email">
+                        <TextField editable="false" promptText="Email">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
@@ -106,7 +106,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField promptText="Password">
+                        <TextField editable="false" promptText="Password">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
@@ -119,7 +119,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField promptText="Full Name">
+                        <TextField editable="false" promptText="Full Name">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
@@ -132,7 +132,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField promptText="Income Range">
+                        <TextField editable="false" promptText="Income Range">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
@@ -145,7 +145,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField promptText="Household Size">
+                        <TextField editable="false" promptText="Household Size">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
