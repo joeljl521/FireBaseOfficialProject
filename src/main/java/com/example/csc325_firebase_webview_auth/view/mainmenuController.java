@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
+// Controller class for the main menu view
 public class mainmenuController {
 
     @FXML
