@@ -15,7 +15,7 @@ JavaFX: For UI components, controls, and FXML-based layouts.
 Firebase Admin SDK: Server-side storage and authentication.
 # Intended Users
 The app is designed for individuals seeking a simple and efficient way to manage their health insurance and explore suitable plans.
-# Pages Description
+# Page Descriptions
 Login/Sign-Up Page
 Login: Enter your username and password to access your account.
 Sign-Up: Create an account by providing required information.
