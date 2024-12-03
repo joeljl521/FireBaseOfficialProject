@@ -24,3 +24,6 @@ About Us: Learn more about the app's purpose and offerings, displays a summary o
 # Insurance Plan Page
 View recommended insurance plans based on your details. <br>
 Select the plan that best fits your needs.
+
+# Images
+image.png
