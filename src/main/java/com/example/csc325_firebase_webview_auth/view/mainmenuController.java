@@ -28,7 +28,7 @@ public class mainmenuController {
     @FXML
     protected void onSignUpBtn() {
         try {
-            App.setRoot("signuppage.fxml");
+            App.setRoot("signuppage.fxml");     // Navigate to the sign-up page
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
