@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
-
+// Controller class for the User Account Information view
 public class UserAccountInfoController {
 
     @FXML
