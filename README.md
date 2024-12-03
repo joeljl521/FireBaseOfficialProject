@@ -4,7 +4,7 @@
 The Health Insurance App is designed to help users easily manage their health insurance details. Users can create an account, input their information, and browse recommended health insurance plans based on their preferences and details.
 
 # Features
-Login/Sign-Up Page: Create a new account or log in to access your information.
+Login/Sign-Up Page: Create a new account or log in to access your information. <br>
 Home Page: View and navigate through the app's features.
 Select Insurance Plan Page: Explore and choose health insurance plans tailored to your needs.
 # Technologies Used
