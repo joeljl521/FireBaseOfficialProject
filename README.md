@@ -27,3 +27,4 @@ Select the plan that best fits your needs.
 
 # Images
 ![](image.png)
+![](image2.png)
