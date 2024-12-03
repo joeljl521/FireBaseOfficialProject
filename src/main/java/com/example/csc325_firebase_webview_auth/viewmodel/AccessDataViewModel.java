@@ -7,6 +7,7 @@ import javafx.beans.property.ReadOnlyBooleanWrapper;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
+// Define the ViewModel class to handle data binding and state management
 public class AccessDataViewModel {
 
 	private final StringProperty userName = new SimpleStringProperty();
