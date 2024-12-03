@@ -3,23 +3,51 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane prefHeight="600.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.SelectPlanController">
+<ScrollPane prefHeight="600.0" prefWidth="344.0" style="-fx-background-color: #4C4347;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.SelectPlanController">
    <content>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2000.0" prefWidth="334.0" style="-fx-background-color: #C4A484;">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2000.0" prefWidth="334.0" style="-fx-background-color: #4C4347;">
          <children>
             <Text layoutX="45.0" layoutY="63.0" onMouseClicked="#onTitleClick" strokeType="OUTSIDE" strokeWidth="0.0" text="PrimeHealth Network">
                <font>
-                  <Font name="System Bold Italic" size="24.0" />
+                  <Font name="Times New Roman Bold" size="24.0" />
                </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9803921580314636" green="0.9058823585510254" blue="0.6980392336845398" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.4959349593495936">
+                           <color>
+                              <Color red="0.9137254953384399" green="0.7529411911964417" blue="0.30588236451148987" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9803921580314636" green="0.9058823585510254" blue="0.6980392336845398" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <InnerShadow height="3.0" radius="1.0" width="3.0" />
+               </effect>
             </Text>
-            <Pane layoutX="26.0" layoutY="87.0" prefHeight="512.0" prefWidth="282.0" style="-fx-background-color: #A9A9A9;">
+            <Pane layoutX="26.0" layoutY="87.0" prefHeight="512.0" prefWidth="282.0" style="-fx-background-color: #A9A9A9; -fx-background-radius: 10;">
                <children>
                   <Text layoutX="105.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plan #1">
                      <font>
@@ -66,7 +94,10 @@
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Button layoutX="111.0" layoutY="470.0" mnemonicParsing="false" onAction="#SelectPlan1" text="SELECT" />
+                  <Button layoutX="111.0" layoutY="470.0" mnemonicParsing="false" onAction="#SelectPlan1" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="SELECT">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font></Button>
                   <Text layoutX="52.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Price(Up to 12 Months)">
                      <font>
                         <Font name="System Bold" size="11.0" />
@@ -74,7 +105,7 @@
                   </Text>
                </children>
             </Pane>
-            <Pane layoutX="26.0" layoutY="636.0" prefHeight="512.0" prefWidth="282.0" style="-fx-background-color: #A9A9A9;">
+            <Pane layoutX="26.0" layoutY="636.0" prefHeight="512.0" prefWidth="282.0" style="-fx-background-color: #A9A9A9; -fx-background-radius: 10;">
                <children>
                   <Text layoutX="105.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plan #2">
                      <font>
@@ -111,7 +142,11 @@
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <Button layoutX="111.0" layoutY="470.0" mnemonicParsing="false" onAction="#SelectPlan2" text="SELECT" />
+                  <Button layoutX="111.0" layoutY="470.0" mnemonicParsing="false" onAction="#SelectPlan2" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="SELECT">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                  </Button>
                   <Text layoutX="52.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Price(Up to 12 Months)">
                      <font>
                         <Font name="System Bold" size="11.0" />
