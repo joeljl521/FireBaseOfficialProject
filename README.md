@@ -21,6 +21,6 @@ Login: Enter your username and password to access your account. <br>
 Sign-Up: Create an account by providing required information. <br>
 About Us: Learn more about the app's purpose and offerings, displays a summary of what the app provides, including benefits and features.
 
-Insurance Plan Page
+# Insurance Plan Page
 View recommended insurance plans based on your details. <br>
 Select the plan that best fits your needs.
