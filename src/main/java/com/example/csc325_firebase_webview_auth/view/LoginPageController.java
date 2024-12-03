@@ -26,6 +26,7 @@ public class LoginPageController {
         }
     }
 
+     // Method triggered when the title is clicked
     @FXML
     protected void onTitleClick(){
         try {
