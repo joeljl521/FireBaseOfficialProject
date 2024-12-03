@@ -28,6 +28,7 @@ public class AccessDataViewModel {
 		return userMajor;
 	}
 
+ // Method to get the read-only property indicating if writing is possible
 	public ReadOnlyBooleanProperty isWritePossibleProperty() {
 		return writePossible.getReadOnlyProperty();
 	}
