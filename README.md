@@ -26,4 +26,4 @@ View recommended insurance plans based on your details. <br>
 Select the plan that best fits your needs.
 
 # Images
-(image.png)
+!(image.png)
