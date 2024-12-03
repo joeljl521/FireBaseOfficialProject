@@ -17,6 +17,7 @@ public class LoginPageController {
     }
     @FXML
 
+     // Method triggered when the "Create Account" button is clicked
     protected void createaccountbtn(){
         try {
             App.setRoot("signuppage.fxml");
