@@ -19,7 +19,7 @@ public class mainmenuController {
     @FXML
     protected void onLoginButtonClick(){
         try {
-            App.setRoot("loginpage.fxml");
+            App.setRoot("loginpage.fxml");  // Navigate to the login page
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
