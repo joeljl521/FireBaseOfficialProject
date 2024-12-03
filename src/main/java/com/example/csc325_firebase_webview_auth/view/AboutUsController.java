@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
+// Controller class for the "About Us" view
 public class AboutUsController {
 
     @FXML
