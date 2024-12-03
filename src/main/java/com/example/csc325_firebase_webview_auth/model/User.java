@@ -1,5 +1,6 @@
 package com.example.csc325_firebase_webview_auth.model;
 
+// Define the User class to represent user information
 public class User  {
 
     private String firstName;
