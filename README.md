@@ -19,9 +19,7 @@ The app is designed for individuals seeking a simple and efficient way to manage
 Login/Sign-Up Page <br>
 Login: Enter your username and password to access your account. <br>
 Sign-Up: Create an account by providing required information. <br>
-About Us: Learn more about the app's purpose and offerings. <br>
-About Us Page 
-Displays a summary of what the app provides, including benefits and features.
+About Us: Learn more about the app's purpose and offerings, displays a summary of what the app provides, including benefits and features.
 
 Insurance Plan Page
 View recommended insurance plans based on your details. <br>
