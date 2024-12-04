@@ -43,6 +43,7 @@ public class SignUpController {
     private boolean key;
     private ObservableList<Person> listOfUsers = FXCollections.observableArrayList();
     private Person person;
+
     public ObservableList<Person> getListOfUsers() {
         return listOfUsers;
     }
@@ -101,28 +102,8 @@ public class SignUpController {
     private TextField householdsizeid;
 
 
-
-
-
-
-
-
-
     @FXML
-    protected void onNextPageBtn(){
-        try {
-            App.setRoot("signuppage2.fxml");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-
-        String firstname = firstnameid.getText();
-        System.out.println(firstname);
-    }
-
-    @FXML
-    protected void onLoginButtonClick(){
+    protected void onLoginButtonClick() {
         try {
             App.setRoot("loginpage.fxml");
         } catch (IOException e) {
@@ -131,7 +112,7 @@ public class SignUpController {
     }
 
     @FXML
-    protected void onTitleClick(){
+    protected void onTitleClick() {
         try {
             App.setRoot("mainmenu.fxml");
         } catch (IOException e) {
@@ -140,27 +121,26 @@ public class SignUpController {
     }
 
 
-
     @FXML
-    private void addRecord(ActionEvent event) {ApplyBtn();
+    private void addRecord(ActionEvent event) {
+        ApplyBtn();
     }
 
-        @FXML
+    @FXML
     private void readRecord(ActionEvent event) {
         readFirebase();
     }
 
-            @FXML
+    @FXML
     private void regRecord(ActionEvent event) {
         registerUser();
     }
 
-     @FXML
+    @FXML
     private void switchToSecondary() throws IOException {
         App.setRoot("/files/WebContainer.fxml");
     }
 
-    @FXML
     public void ApplyBtn() {
 
 //        DocumentReference docRef = App.fstore.collection("References").document(UUID.randomUUID().toString());
@@ -173,7 +153,7 @@ public class SignUpController {
 //        ApiFuture<WriteResult> result = docRef.set(data);
 
         DocumentReference docRef = App.fstore.collection("Users").document(UUID.randomUUID().toString());
-
+// Should set user here for kat??
         Map<String, Object> data = new HashMap<>();
         data.put("First Name", firstnameid.getText());
         data.put("Last Name", lastnameid.getText());
@@ -190,23 +170,34 @@ public class SignUpController {
         data.put("Zip Code", zipcodeid.getText());
         data.put("Income Range", incomerangeid.getText());
         data.put("Household Size", householdsizeid.getText());
-        
-
-
 
         //asynchronously write data
         ApiFuture<WriteResult> result = docRef.set(data);
 
-        try {
-            App.setRoot("signuppage2.fxml");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        registerUser();
+        if ((Integer.parseInt(householdsizeid.getText()) >= 1) && (Integer.parseInt(incomerangeid.getText()) <= 30000)) { // Check if householdId is 1 or greater
+            // Check if incomeRange is less than or equal to 30000
+            try {
+                App.setRoot("selectplan.fxml");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            try {
+                App.setRoot("dismiss.fxml");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
+
+
 
     }
 
-        public boolean readFirebase()
-         {
+
+
+    public boolean readFirebase()
+        {
              key = false;
 
         //asynchronously retrieve all documents
@@ -221,14 +212,17 @@ public class SignUpController {
                 System.out.println("Outing....");
                 for (QueryDocumentSnapshot document : documents)
                 {
-                    outputField.setText(outputField.getText()+ document.getData().get("Name")+ " , Major: "+
-                            document.getData().get("Major")+ " , Age: "+
-                            document.getData().get("Age")+ " \n ");
-                    System.out.println(document.getId() + " => " + document.getData().get("Name"));
-                    person  = new Person(String.valueOf(document.getData().get("Name")),
-                            document.getData().get("Major").toString(),
-                            Integer.parseInt(document.getData().get("Age").toString()));
-                    listOfUsers.add(person);
+                    // email = email
+                    System.out.println(document.getData().get("Household Size"));
+                    System.out.println(document.getData().get("Income Range"));
+//                    outputField.setText(outputField.getText()+ document.getData().get("Name")+ " , Major: "+
+//                            document.getData().get("Major")+ " , Age: "+
+//                            document.getData().get("Age")+ " \n ");
+//                    System.out.println(document.getId() + " => " + document.getData().get("Name"));
+//                    person  = new Person(String.valueOf(document.getData().get("Name")),
+//                            document.getData().get("Major").toString(),
+//                            Integer.parseInt(document.getData().get("Age").toString()));
+//                    listOfUsers.add(person);
                 }
             }
             else
@@ -254,13 +248,12 @@ public class SignUpController {
         }
     }
 
+    @FXML
     public boolean registerUser() {
         UserRecord.CreateRequest request = new UserRecord.CreateRequest()
-                .setEmail("user@example.com")
+                .setEmail(emailid.getText())
                 .setEmailVerified(false)
-                .setPassword("secretPassword")
-                .setPhoneNumber("+11234567890")
-                .setDisplayName("John Doe")
+                .setPassword(passwordid.getText())
                 .setDisabled(false);
 
         UserRecord userRecord;
@@ -276,3 +269,4 @@ public class SignUpController {
 
     }
 }
+

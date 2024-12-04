@@ -147,7 +147,7 @@
                         <Insets bottom="2.0" />
                      </VBox.margin>
                   </Text>
-                  <TextField fx:id="middlenameid" prefHeight="25.0" prefWidth="195.0" promptText="Enter your Email Address">
+                  <TextField fx:id="middlenameid" prefHeight="25.0" prefWidth="195.0" promptText="Enter your Middle Name">
                      <VBox.margin>
                         <Insets bottom="20.0" />
                      </VBox.margin>
@@ -160,7 +160,7 @@
                         <Insets bottom="2.0" />
                      </VBox.margin>
                   </Text>
-                  <TextField fx:id="emailid" prefHeight="26.0" prefWidth="192.0" promptText="Enter your Middle Name">
+                  <TextField fx:id="emailid" prefHeight="26.0" prefWidth="192.0" promptText="Enter your Email">
                      <VBox.margin>
                         <Insets bottom="20.0" />
                      </VBox.margin>
@@ -173,7 +173,7 @@
                         <Insets bottom="2.0" />
                      </VBox.margin>
                   </Text>
-                  <TextField fx:id="genderid" prefHeight="25.0" prefWidth="196.0">
+                  <TextField fx:id="genderid" prefHeight="25.0" prefWidth="196.0" promptText="Enter your Gender">
                      <VBox.margin>
                         <Insets bottom="20.0" />
                      </VBox.margin>
@@ -214,7 +214,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField fx:id="streetaddressid" prefHeight="25.0" prefWidth="200.0">
+                        <TextField fx:id="streetaddressid" prefHeight="25.0" prefWidth="200.0" promptText="Street Address">
                            <VBox.margin>
                               <Insets bottom="20.0" />
                            </VBox.margin>
@@ -302,7 +302,7 @@
                   </VBox>
                </children>
             </VBox>
-            <Button layoutX="134.0" layoutY="1229.0" mnemonicParsing="false" onAction="#ApplyBtn" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="Apply">
+            <Button layoutX="134.0" layoutY="1229.0" mnemonicParsing="false" onAction="#addRecord" style="-fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #F6DB85 0%, #E7C36E 50%, #B88C32 100%);" text="Apply">
                <font>
                   <Font name="Times New Roman" size="13.0" />
                </font>
