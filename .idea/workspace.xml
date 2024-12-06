@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="12/5/24">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/view/LoginPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/files/key.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/key.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,14 +17,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="package.json" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Working-project" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +57,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;test&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/knigh/IdeaProjects/CSC325_Firebase_webview_Auth_StarterCode8/src/main/resources/files&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/knigh/IdeaProjects/CSC325_Firebase_webview_Auth_StarterCode8&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,11 +72,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\knigh\IdeaProjects\CSC325_Firebase_webview_Auth_StarterCode8\src\main\resources\files" />
       <recent name="C:\Users\knigh\IdeaProjects\CSC325_Firebase_webview_Auth_StarterCode8" />
       <recent name="C:\Users\knigh\IdeaProjects\CSC325_Firebase_webview_Auth_StarterCode8\src\main\resources\fxml" />
       <recent name="C:\Users\knigh\IdeaProjects\CSC325_Firebase_webview_Auth_StarterCode8\src\main\java\com\example\csc325_firebase_webview_auth\view" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/csc325_firebase_webview_auth" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/csc325_firebase_webview_auth/viewmodel" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\knigh\IdeaProjects\CSC325_Firebase_webview_Auth_StarterCode8\src\main\resources\files" />
@@ -187,10 +187,8 @@
       <workItem from="1733169959359" duration="2070000" />
       <workItem from="1733174396719" duration="5247000" />
       <workItem from="1733180802012" duration="10000" />
-      <workItem from="1733180992194" duration="1401000" />
-      <workItem from="1733189140286" duration="3059000" />
-      <workItem from="1733422750959" duration="60000" />
-      <workItem from="1733449201351" duration="2581000" />
+      <workItem from="1733452809264" duration="157000" />
+      <workItem from="1733454417955" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="reduce Java version to 17">
       <option name="closed" value="true" />
@@ -312,39 +310,7 @@
       <option name="project" value="LOCAL" />
       <updated>1733177718502</updated>
     </task>
-    <task id="LOCAL-00016" summary="12/2/24 gitignore">
-      <option name="closed" value="true" />
-      <created>1733181285992</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1733181285992</updated>
-    </task>
-    <task id="LOCAL-00017" summary="12/4/24 gitignore">
-      <option name="closed" value="true" />
-      <created>1733351466026</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1733351466026</updated>
-    </task>
-    <task id="LOCAL-00018" summary="12/5/24">
-      <option name="closed" value="true" />
-      <created>1733422789060</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1733422789060</updated>
-    </task>
-    <task id="LOCAL-00019" summary="12/5/24">
-      <option name="closed" value="true" />
-      <created>1733451840448</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1733451840448</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,8 +348,6 @@
     <MESSAGE value="GUI update" />
     <MESSAGE value="12/2/24" />
     <MESSAGE value="12/2/24 gitignore" />
-    <MESSAGE value="12/4/24 gitignore" />
-    <MESSAGE value="12/5/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="12/5/24" />
+    <option name="LAST_COMMIT_MESSAGE" value="12/2/24 gitignore" />
   </component>
 </project>
