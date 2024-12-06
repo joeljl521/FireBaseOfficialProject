@@ -1,6 +1,5 @@
 package com.example.csc325_firebase_webview_auth.model;
 
-// Define the User class to represent user information
 public class User  {
 
     private String firstName;
@@ -19,7 +18,7 @@ public class User  {
     private String incomeRange;
     private String houseHoldSize;
 
-// Constructor to initialize a User object with all fields
+
     public User(String firstName, String lastName, String dob, String middleName, String email, String gender, String phoneNumber, String password, String streetAddress, String etcId, String city, String state, String zipcode, String incomeRange, String houseHoldSize) {
         this.firstName = firstName;
         this.lastName = lastName;
