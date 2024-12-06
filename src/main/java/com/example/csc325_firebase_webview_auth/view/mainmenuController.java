@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
+// Controller class for the main menu view
 public class mainmenuController {
 
     @FXML
@@ -18,7 +19,7 @@ public class mainmenuController {
     @FXML
     protected void onLoginButtonClick(){
         try {
-            App.setRoot("loginpage.fxml");
+            App.setRoot("loginpage.fxml");  // Navigate to the login page
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -27,7 +28,7 @@ public class mainmenuController {
     @FXML
     protected void onSignUpBtn() {
         try {
-            App.setRoot("signuppage.fxml");
+            App.setRoot("signuppage.fxml");     // Navigate to the sign-up page
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

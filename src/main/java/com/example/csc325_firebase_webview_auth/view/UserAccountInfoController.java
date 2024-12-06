@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
-
+// Controller class for the User Account Information view
 public class UserAccountInfoController {
 
     @FXML
@@ -13,7 +13,7 @@ public class UserAccountInfoController {
         try {
             App.setRoot("mainmenu.fxml");
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(e);  // Handle any IO exceptions during navigation
         }
     }
 }

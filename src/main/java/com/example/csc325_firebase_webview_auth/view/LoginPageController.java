@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
+// Controller class for the login page view
 public class LoginPageController {
 
     @FXML
@@ -16,6 +17,7 @@ public class LoginPageController {
     }
     @FXML
 
+     // Method triggered when the "Create Account" button is clicked
     protected void createaccountbtn(){
         try {
             App.setRoot("signuppage.fxml");
@@ -24,6 +26,7 @@ public class LoginPageController {
         }
     }
 
+     // Method triggered when the title is clicked
     @FXML
     protected void onTitleClick(){
         try {
