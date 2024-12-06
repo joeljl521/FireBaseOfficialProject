@@ -40,6 +40,9 @@ public class SignUpController {
     private Button readButton;
     @FXML
     private TextArea outputField;
+
+
+
     private boolean key;
     private ObservableList<Person> listOfUsers = FXCollections.observableArrayList();
     private Person person;
@@ -100,11 +103,13 @@ public class SignUpController {
     @FXML
     private TextField householdsizeid;
 
-
-
-
-
-
+    public static String username;
+    public static String email;
+    public static String password;
+    public static String firstname;
+    public static String lastname;
+    public static String incomerange;
+    public static String householdsize;
 
 
 
@@ -145,23 +150,31 @@ public class SignUpController {
     private void addRecord(ActionEvent event) {ApplyBtn();
     }
 
-        @FXML
+    @FXML
     private void readRecord(ActionEvent event) {
         readFirebase();
     }
 
-            @FXML
+    @FXML
     private void regRecord(ActionEvent event) {
         registerUser();
     }
 
-     @FXML
+    @FXML
     private void switchToSecondary() throws IOException {
         App.setRoot("/files/WebContainer.fxml");
     }
 
     @FXML
     public void ApplyBtn() {
+
+        username = emailid.getText();
+        email = emailid.getText();
+        password = passwordid.getText();
+        firstname = firstnameid.getText();
+        lastname = lastnameid.getText();
+        incomerange = incomerangeid.getText();
+        householdsize = householdsizeid.getText();
 
 //        DocumentReference docRef = App.fstore.collection("References").document(UUID.randomUUID().toString());
 //
@@ -190,7 +203,7 @@ public class SignUpController {
         data.put("Zip Code", zipcodeid.getText());
         data.put("Income Range", incomerangeid.getText());
         data.put("Household Size", householdsizeid.getText());
-        
+
 
 
 
@@ -198,16 +211,16 @@ public class SignUpController {
         ApiFuture<WriteResult> result = docRef.set(data);
 
         try {
-            App.setRoot("signuppage2.fxml");
+            App.setRoot("selectplan.fxml");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
     }
 
-        public boolean readFirebase()
-         {
-             key = false;
+    public boolean readFirebase()
+    {
+        key = false;
 
         //asynchronously retrieve all documents
         ApiFuture<QuerySnapshot> future =  App.fstore.collection("Users").get();
@@ -233,19 +246,19 @@ public class SignUpController {
             }
             else
             {
-               System.out.println("No data");
+                System.out.println("No data");
             }
             key=true;
 
         }
         catch (InterruptedException | ExecutionException ex)
         {
-             ex.printStackTrace();
+            ex.printStackTrace();
         }
         return key;
     }
 
-        public void sendVerificationEmail() {
+    public void sendVerificationEmail() {
         try {
             UserRecord user = App.fauth.getUser("name");
             //String url = user.getPassword();
@@ -270,7 +283,7 @@ public class SignUpController {
             return true;
 
         } catch (FirebaseAuthException ex) {
-           // Logger.getLogger(FirestoreContext.class.getName()).log(Level.SEVERE, null, ex);
+            // Logger.getLogger(FirestoreContext.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
 

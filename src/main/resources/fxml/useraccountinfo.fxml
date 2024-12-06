@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.UserAccountInfoController">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.UserAccountInfoController">
    <content>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="334.0" style="-fx-background-color: #4C4347;">
          <children>
@@ -80,7 +80,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField editable="false" promptText="Username">
+                        <TextField fx:id="usernameField" editable="false" promptText="Username">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
@@ -93,7 +93,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField editable="false" promptText="Email">
+                        <TextField fx:id="emailField" editable="false" promptText="Email">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
@@ -106,7 +106,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField editable="false" promptText="Password">
+                        <TextField fx:id="passwordField" editable="false" promptText="Password">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
@@ -119,7 +119,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField editable="false" promptText="Full Name">
+                        <TextField fx:id="firstNameField" editable="false" promptText="Full Name">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
@@ -132,7 +132,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField editable="false" promptText="Income Range">
+                        <TextField fx:id="incomeField" editable="false" promptText="Income Range">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
@@ -145,7 +145,7 @@
                               <Insets bottom="2.0" />
                            </VBox.margin>
                         </Text>
-                        <TextField editable="false" promptText="Household Size">
+                        <TextField fx:id="householdField" editable="false" promptText="Household Size">
                            <VBox.margin>
                               <Insets bottom="10.0" />
                            </VBox.margin>
