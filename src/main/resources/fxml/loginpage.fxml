@@ -47,8 +47,8 @@
             <Font name="Times New Roman" size="36.0" />
          </font>
       </Text>
-      <TextField layoutX="43.0" layoutY="284.0" prefHeight="32.0" prefWidth="236.0" promptText="Enter your password" />
-      <TextField layoutX="43.0" layoutY="219.0" prefHeight="32.0" prefWidth="236.0" promptText="sample@email.com" />
+      <TextField fx:id="PasswordId" layoutX="43.0" layoutY="284.0" prefHeight="32.0" prefWidth="236.0" promptText="Enter your password" />
+      <TextField fx:id="UserNameId" layoutX="43.0" layoutY="219.0" prefHeight="32.0" prefWidth="236.0" promptText="sample@email.com" />
       <Text fill="WHITE" layoutX="43.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
          <font>
             <Font name="Times New Roman" size="15.0" />
